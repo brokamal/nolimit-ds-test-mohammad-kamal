@@ -1,0 +1,8 @@
+flask
+torch
+gunicorn
+uvicorn
+datasets
+evaluate
+scikit-learn 
+transformers
