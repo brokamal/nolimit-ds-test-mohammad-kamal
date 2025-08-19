@@ -6,6 +6,17 @@ You can use the deployed version of this [app](https://huggingface.co/spaces/kam
 - Model used: [disitillBERT](https://huggingface.co/distilbert/distilbert-base-uncased) 
 - Dataset used: [dataset](https://huggingface.co/datasets/cornell-movie-review-data/rotten_tomatoes)
 
+# Usage 
+1. Enter a review of a movies, for example:
+```
+The tonal shifts don’t always work. Yes, it comes apart. Defiantly so. Then again, the film doesn’t seem to care about narrative precision. It’s about dread, decay, and the unavoidable march of time.`
+```
+2. Click the button after filling the review.
+
+
+3. See prediction result 
+
+
 
 # How to run
 Here's how you can run the app locally:
@@ -23,4 +34,5 @@ python3 app.py
 ```
 http://127.0.0.1:7860/predict
 ```
+
 
