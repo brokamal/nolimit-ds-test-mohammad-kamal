@@ -56,6 +56,9 @@ http://127.0.0.1:7860/predict
 ```
 
 # Flowchart 
+The flowchart is divided into two parts: training and inference. 
+Training flowchart contains the processes of training/fine-tuning the pre-trained model distillBERT. 
+The Inference flowchart shows the processes of running the model through inference, in this case it's deployed on Hugging Face Space. 
 ## Training Flowchart
 ![train-flow](/docs/train.png)
 ### Explanation 
