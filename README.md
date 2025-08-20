@@ -1,7 +1,7 @@
 # Rotten Tomatoes Movie Review Sentiment Classifier
 
 ## About
-This app predicts the sentiment of movie reviews. disitillBERT was fine tuned using Rotten Tomatoes Review dataset. You can use the deployed version of this [app](https://huggingface.co/spaces/kamalbdg/distillBERT-RT-Review)
+This app predicts the sentiment of movie reviews. disitillBERT was fine tuned using Rotten Tomatoes Review dataset. It also gives you the closest review in similarty search. You can use the deployed version of this [app](https://huggingface.co/spaces/kamalbdg/distillBERT-RT-Review)
 - Model used: [disitillBERT](https://huggingface.co/distilbert/distilbert-base-uncased) 
 - Dataset used: [dataset](https://huggingface.co/datasets/cornell-movie-review-data/rotten_tomatoes) , License: MIT
 - Framework and deploy: [Flask + huggingface space](https://huggingface.co/spaces/kamalbdg/distillBERT-RT-Review)
@@ -39,14 +39,35 @@ pip3 install -r requirements.txt
 ```
 python3 app.py
 ```
-3. go to the address
+4. go to the address
 ```
 http://127.0.0.1:7860/predict
 ```
 
 # Flowchart 
+## Training Flowchart
+![train-flow](/docs/train.png)
+### Explanation 
+1. Rotten tomatoes review sentiment dataset is loaded as the dataset
+2. Dataset is then preprocessed (tokenazation and padding)
+3. distillBERT model is trained using the dataset 
+4. Fine-tuned model is evaluated using evaluation metrics. 
+5. Re-train if the accuracy is low.
+6. Save model if the accuracy is high, as the final fine-tuned model.
 
 
+
+## Inference Flowchart
+![inf-flow](/docs/Inference.png)
+### Explanation
+1. User input review in form of text.
+2. User input is tokenized before being fed into the fine-tuned model.
+3. Model receive the input, model perform two tasks: classification and embedding extraction.
+4. Classification :  Logits->argmax-> sentiment label (Positive / Negative).
+5. Embedding extraction : Hidden state of [CLS] token is taken as the sentence embedding.
+6. Similarity search using KNN : The query embedding compared with training set embedding using KNN. Retrives the 5 closest distance of review.
+7. Final output for classification is label: positive or Negative
+8. Final output for similarity search is the top 5 closest distance review with the distance itself.
 
 
 
