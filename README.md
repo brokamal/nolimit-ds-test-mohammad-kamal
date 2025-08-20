@@ -24,11 +24,11 @@ The tonal shifts don’t always work. Yes, it comes apart. Defiantly so. Then ag
 3. See prediction and similarity search result : 
 
 - Positive result:
-![result-poz](/docs/pozreview.png)
+![result-poz](/docs/negreview.png)
 
 
 - Negative Result
-![result-neg](/docs/negreview.png)
+![result-neg](/docs/pozreview.png)
 
 
 # How to run
