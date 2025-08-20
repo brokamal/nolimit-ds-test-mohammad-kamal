@@ -1,10 +1,9 @@
 # Rotten Tomatoes Movie Review Sentiment Classifier
 
 ## About
-This app predicts the sentiment of movie reviews. disitillBERT was fine tuned using Rotten Tomatoes Review dataset.  
-You can use the deployed version of this [app](https://huggingface.co/spaces/kamalbdg/distillBERT-RT-Review)
+This app predicts the sentiment of movie reviews. disitillBERT was fine tuned using Rotten Tomatoes Review dataset. You can use the deployed version of this [app](https://huggingface.co/spaces/kamalbdg/distillBERT-RT-Review)
 - Model used: [disitillBERT](https://huggingface.co/distilbert/distilbert-base-uncased) 
-- Dataset used: [dataset](https://huggingface.co/datasets/cornell-movie-review-data/rotten_tomatoes)
+- Dataset used: [dataset](https://huggingface.co/datasets/cornell-movie-review-data/rotten_tomatoes) , License: MIT
 - Framework and deploy: [Flask + huggingface space](https://huggingface.co/spaces/kamalbdg/distillBERT-RT-Review)
 
 
@@ -18,7 +17,11 @@ The tonal shifts don’t always work. Yes, it comes apart. Defiantly so. Then ag
 
 3. See prediction result 
 
+- Positive result:
+![result-poz](/docs/poz.png)
 
+- Negative Result
+![result-neg](/docs/poz.png)
 
 
 # How to run
@@ -41,4 +44,13 @@ python3 app.py
 http://127.0.0.1:7860/predict
 ```
 
+# Flowchart 
 
+
+
+
+
+
+
+# License
+MIT
