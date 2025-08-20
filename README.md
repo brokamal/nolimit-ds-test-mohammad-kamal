@@ -1,24 +1,31 @@
 # Rotten Tomatoes Movie Review Sentiment Classifier
 
 ## About
-This app predicts the sentiment of movie reviews.It also gives you the closest review in similarty search. You can use the deployed version of this [app](https://huggingface.co/spaces/kamalbdg/distillBERT-RT-Review)
+This app predicts the sentiment of movie reviews. It also gives you the closest review in similarty search. You can use the deployed version of this [app](https://huggingface.co/spaces/kamalbdg/distillBERT-RT-Review)
 - Model used: [disitillBERT](https://huggingface.co/distilbert/distilbert-base-uncased) 
 - Dataset used: [dataset](https://huggingface.co/datasets/cornell-movie-review-data/rotten_tomatoes) , License: unknown
 - Framework and deploy: [Flask + huggingface space](https://huggingface.co/spaces/kamalbdg/distillBERT-RT-Review)
 
 
 # Usage 
-1. Enter a review of a movies, for example:
+1. Enter a review of a movie, for example:
+- Positive review
+```
+Classy, arty, horror. Good enough for genre fans. Mature enough for grownups. More than enough.
+```
+- Negative Review 
 ```
 The tonal shifts don’t always work. Yes, it comes apart. Defiantly so. Then again, the film doesn’t seem to care about narrative precision. It’s about dread, decay, and the unavoidable march of time.`
 ```
+
 2. Click the button after filling the review.
 
 
-3. See prediction result 
+3. See prediction and similarity search result : 
 
 - Positive result:
 ![result-poz](/docs/pozreview.png)
+
 
 - Negative Result
 ![result-neg](/docs/negreview.png)
@@ -73,5 +80,3 @@ http://127.0.0.1:7860/predict
 
 
 
-# License
-MIT
