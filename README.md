@@ -6,6 +6,10 @@ This app predicts the sentiment of movie reviews. It also gives you the closest 
 - Dataset used: [dataset](https://huggingface.co/datasets/cornell-movie-review-data/rotten_tomatoes) , License: unknown
 - Framework and deploy: [Flask + huggingface space](https://huggingface.co/spaces/kamalbdg/distillBERT-RT-Review)
 
+## Feature
+- Predict movie review sentiment (Positive/Negative) .
+- Show the closets reviews from the dataset and the distance between them.
+
 
 # Usage 
 1. Enter a review of a movie, for example:
