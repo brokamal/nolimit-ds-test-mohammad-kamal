@@ -1,9 +1,9 @@
 # Rotten Tomatoes Movie Review Sentiment Classifier
 
 ## About
-This app predicts the sentiment of movie reviews. disitillBERT was fine tuned using Rotten Tomatoes Review dataset. It also gives you the closest review in similarty search. You can use the deployed version of this [app](https://huggingface.co/spaces/kamalbdg/distillBERT-RT-Review)
+This app predicts the sentiment of movie reviews.It also gives you the closest review in similarty search. You can use the deployed version of this [app](https://huggingface.co/spaces/kamalbdg/distillBERT-RT-Review)
 - Model used: [disitillBERT](https://huggingface.co/distilbert/distilbert-base-uncased) 
-- Dataset used: [dataset](https://huggingface.co/datasets/cornell-movie-review-data/rotten_tomatoes) , License: MIT
+- Dataset used: [dataset](https://huggingface.co/datasets/cornell-movie-review-data/rotten_tomatoes) , License: unknown
 - Framework and deploy: [Flask + huggingface space](https://huggingface.co/spaces/kamalbdg/distillBERT-RT-Review)
 
 
