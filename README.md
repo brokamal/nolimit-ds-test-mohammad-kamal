@@ -10,8 +10,9 @@ This app predicts the sentiment of movie reviews. It also gives you the closest 
 - Show the closets reviews from the dataset and the distance between them.
 
 
+
 # Usage 
-1. Enter a review of a movie, for example:
+1. Enter a review of a movie, for example: (more sample input available at `sample_input.txt`)
 - Positive review input example:
 ```
 Classy, arty, horror. Good enough for genre fans. Mature enough for grownups. More than enough.
