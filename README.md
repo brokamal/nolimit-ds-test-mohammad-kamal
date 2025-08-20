@@ -58,7 +58,7 @@ http://127.0.0.1:7860/predict
 
 
 ## Inference Flowchart
-![inf-flow](/docs/Inference.png)
+![inf-flow](/docs/inference.png)
 ### Explanation
 1. User input review in form of text.
 2. User input is tokenized before being fed into the fine-tuned model.
