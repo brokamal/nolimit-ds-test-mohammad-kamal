@@ -18,10 +18,10 @@ The tonal shifts don’t always work. Yes, it comes apart. Defiantly so. Then ag
 3. See prediction result 
 
 - Positive result:
-![result-poz](/docs/poz.png)
+![result-poz](/docs/pozreview.png)
 
 - Negative Result
-![result-neg](/docs/poz.png)
+![result-neg](/docs/negreview.png)
 
 
 # How to run
