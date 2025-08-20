@@ -1,5 +1,4 @@
 # Rotten Tomatoes Movie Review Sentiment Classifier
-
 ## About
 This app predicts the sentiment of movie reviews. It also gives you the closest review in similarty search. You can use the deployed version of this [app](https://huggingface.co/spaces/kamalbdg/distillBERT-RT-Review)
 - Model used: [disitillBERT](https://huggingface.co/distilbert/distilbert-base-uncased) 
@@ -7,31 +6,30 @@ This app predicts the sentiment of movie reviews. It also gives you the closest 
 - Framework and deploy: [Flask + huggingface space](https://huggingface.co/spaces/kamalbdg/distillBERT-RT-Review)
 
 ## Feature
-- Predict movie review sentiment (Positive/Negative) .
+- Predict movie review sentiment (Positive/Negative).
 - Show the closets reviews from the dataset and the distance between them.
 
 
 # Usage 
 1. Enter a review of a movie, for example:
-- Positive review
+- Positive review input example:
 ```
 Classy, arty, horror. Good enough for genre fans. Mature enough for grownups. More than enough.
 ```
-- Negative Review 
+- Negative Review input example:
 ```
 The tonal shifts don’t always work. Yes, it comes apart. Defiantly so. Then again, the film doesn’t seem to care about narrative precision. It’s about dread, decay, and the unavoidable march of time.`
 ```
 
 2. Click the button after filling the review.
 
+3. See prediction and similarity search result: 
 
-3. See prediction and similarity search result : 
-
-- Positive result:
+- Positive result output example:
 ![result-poz](/docs/negreview.png)
 
 
-- Negative Result
+- Negative Result output example:
 ![result-neg](/docs/pozreview.png)
 
 
@@ -56,9 +54,7 @@ http://127.0.0.1:7860/predict
 ```
 
 # Flowchart 
-The flowchart is divided into two parts: training and inference. 
-Training flowchart contains the processes of training/fine-tuning the pre-trained model distillBERT. 
-The Inference flowchart shows the processes of running the model through inference, in this case it's deployed on Hugging Face Space. 
+The flowchart is divided into two parts: training and inference.Training flowchart contains theprocesses of training/fine-tuning the pre-trained model distillBERT. The Inference flowchart shows the processes of running the model through inference, in this case it's deployed on Hugging Face Space. 
 ## Training Flowchart
 ![train-flow](/docs/train.png)
 ### Explanation 
